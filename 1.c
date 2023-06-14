@@ -1,17 +1,16 @@
 #include <stdio.h>
 /**
- * main -entry point
+ * main - A C program that prints size of various types in a computer
  *
  * Return: 0 (success)
  */
 int main(void)
 {
-	char letter;
+	printf("size of a char: %ld\n", sizeof(char));
+	printf("size of a int: %ld\n", sizeof(int));
+	printf("size of a long int: %ld\n", sizeof(long int));
+	printf("size of a long long int: %ld\n", sizeof(long long int));
+	printf("size of a float: %ld\n", sizeof(float));
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		putchar(letter);
-	}
-	putchar('\n');
-	return (0);
+    return (0);	
 }
